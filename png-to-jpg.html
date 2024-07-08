@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNG to JPG Converter</title>
+  <link rel="stylesheet" href="png-to-jpg.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>File Conversion Website</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">JPG to PNG</a></li>
+          <li><a href="png-to-jpg.html" class="active">PNG to JPG</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>PNG to JPG Converter</h2>
+      <div class="upload-container">
+        <input type="file" id="uploadImage" accept=".png">
+        <div id="previewContainer">
+          <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+        </div>
+        <button id="convertButton">Convert to JPG</button>
+      </div>
+      <div id="downloadContainer" style="display: none;">
+        <a id="downloadLink" href="#" download="converted.jpg">Download Converted Image</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 File Conversion Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="png-to-jpg.js"></script>
+</body>
+</html>
